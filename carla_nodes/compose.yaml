@@ -1,0 +1,467 @@
+# Comments are provided throughout this file to help you get started.
+# If you need more help, visit the Docker Compose reference guide at
+# https://docs.docker.com/go/compose-spec-reference/
+
+# Here the instructions define your application as a service called "server".
+# This service is built from the Dockerfile in the current directory.
+# You can add other services your application may depend on here, such as a
+# database or a cache. For examples, see the Awesome Compose repository:
+# https://github.com/docker/awesome-compose
+services:
+  cav1:
+    build:
+      context: .
+    command: ["15000", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+      # means forward 127.0.0.1:9990 to container:9600
+    - 49300:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.2
+
+  cav2:
+    build:
+      context: .
+    command: ["15001", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+    - 49301:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.3
+
+  cav3:
+    build:
+      context: .
+    command: ["15002", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+    - 49302:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.4
+
+  cav4:
+    build:
+      context: .
+    command: ["15003", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+    - 49303:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.5
+
+  cav5:
+    build:
+      context: .
+    command: ["15004", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+    - 49304:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.6
+
+  cav6:
+    build:
+      context: .
+    command: ["15005", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+    - 49305:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.7
+
+  cav7:
+    build:
+      context: .
+    command: ["15006", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+    - 49306:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.8
+
+  cav8:
+    build:
+      context: .
+    command: ["15007", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+    - 49307:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.9
+
+  cav9:
+    build:
+      context: .
+    command: ["15008", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+    - 49308:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.10
+
+  cav10:
+    build:
+      context: .
+    command: ["15009", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+    - 49309:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.11
+
+  cav11:
+    build:
+      context: .
+    command: ["15010", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+    - 49310:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.12
+
+
+  cav12:
+    build:
+      context: .
+    command: ["15011", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+    - 49311:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.13
+
+  cav13:
+    build:
+      context: .
+    command: ["15012", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+    - 49312:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.14
+
+  cav14:
+    build:
+      context: .
+    command: ["15013", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+    - 49313:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.15
+
+  cav15:
+    build:
+      context: .
+    command: ["15014", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+    - 49314:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.16
+
+  cav16:
+    build:
+      context: .
+    command: ["15015", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+    - 49315:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.17
+
+  cav17:
+    build:
+      context: .
+    command: ["15016", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+    - 49316:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.18
+
+  cav18:
+    build:
+      context: .
+    command: ["15017", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+    - 49317:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.19
+
+  cav19:
+    build:
+      context: .
+    command: ["15018", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+    - 49318:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.20
+
+  cav20:
+    build:
+      context: .
+    command: ["15019", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+    - 49319:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.21
+
+  cav21:
+    build:
+      context: .
+    command: ["15020", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+    - 49320:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.22
+
+  cav22:
+    build:
+      context: .
+    command: ["15021", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+    - 49321:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.23
+
+  cav23:
+    build:
+      context: .
+    command: ["15022", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+    - 49322:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.24
+
+  cav24:
+    build:
+      context: .
+    command: ["15023", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+    - 49323:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.25
+
+  cav25:
+    build:
+      context: .
+    command: ["15024", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+    - 49324:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.26
+
+  cav26:
+    build:
+      context: .
+    command: ["15025", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+    - 49325:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.27
+
+  cav27:
+    build:
+      context: .
+    command: ["15026", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+    - 49326:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.28
+
+  cav28:
+    build:
+      context: .
+    command: ["15027", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+    - 49327:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.29
+
+  cav29:
+    build:
+      context: .
+    command: ["15028", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+    - 49328:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.30
+
+  cav30:
+    build:
+      context: .
+    command: ["15029", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+    - 49329:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.31
+
+  cav31:
+    build:
+      context: .
+    command: ["15030", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+    - 49330:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.32
+
+  rsu1:
+    build:
+      context: .
+    command: ["15031", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+    - 49331:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.33
+
+  rsu2:
+    build:
+      context: .
+    command: ["15032", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+    - 49332:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.34
+
+  rsu3:
+    build:
+      context: .
+    command: ["15033", "15000"]
+    volumes:
+    - CAV_volume:/app/data
+    ports:
+    - 49333:9600/udp
+    networks:
+      carla_cav:
+        ipv4_address: 192.168.5.35
+
+networks:
+  carla_cav:
+    driver: bridge
+    ipam:
+      config:
+      - subnet: "192.168.5.0/24"
+
+volumes:
+  CAV_volume:
+    name: Blockchain_volume
+    #external: true
+
+
+
+# The commented out section below is an example of how to define a PostgreSQL
+# database that your application can use. `depends_on` tells Docker Compose to
+# start the database before your application. The `db-data` volume persists the
+# database data between container restarts. The `db-password` secret is used
+# to set the database password. You must create `db/password.txt` and add
+# a password of your choosing to it before running `docker compose up`.
+#     depends_on:
+#       db:
+#         condition: service_healthy
+#   db:
+#     image: postgres
+#     restart: always
+#     user: postgres
+#     secrets:
+#       - db-password
+#     volumes:
+#       - db-data:/var/lib/postgresql/data
+#     environment:
+#       - POSTGRES_DB=example
+#       - POSTGRES_PASSWORD_FILE=/run/secrets/db-password
+#     expose:
+#       - 5432
+#     healthcheck:
+#       test: [ "CMD", "pg_isready" ]
+#       interval: 10s
+#       timeout: 5s
+#       retries: 5
+# volumes:
+#   db-data:
+# secrets:
+#   db-password:
+#     file: db/password.txt
+
